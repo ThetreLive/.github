@@ -36,7 +36,8 @@ Thetre's main focus is to provide an excellent user experience while being cost-
 ### DAO & Proposals
 ![Proposals](https://data.thetaedgestore.com/api/v2/data/0x450f37edfc0a91e1df612883c30a1c64a49c71af9706934f841e3da72d9a3536/)
 
-1. ZK Snarks - Zero-Knowledge Snark is used for the election of DAO members, ensuring the process is completely anonymous and decentralised. The DAO election occurs monthly, allowing anyone to apply and share their "love for movies." During the testing phase, this process is internal but will be open to all on the mainnet. After a certain threshold of votes is achieved, the applicant receives a DAO Pass which is used for DRM Sign-in while viewing proposals.
+1. ZK Snarks - Zero-Knowledge Snark is used for the election of DAO members, ensuring the process is completely anonymous and decentralised. The DAO election occurs monthly, allowing anyone to apply and share their "love for movies." During the testing phase, this process is internal but will be open to all on the mainnet. After a certain threshold of votes is achieved, the applicant receives a DAO Pass which is used for DRM Sign-in while viewing proposals. 
+    Check out the contracts [here](https://github.com/ThetreLive/thetre-contracts/tree/master/contracts/ThetreDAOElection)
 
 2. tDAO Token - tDAO is a TNT20 token which is delegated to the DAO members according to the votes they receive, it represents the voting power of an individual member.
 
@@ -46,11 +47,11 @@ Thetre's main focus is to provide an excellent user experience while being cost-
 
 | Contract Name        | Address                                    |
 |----------------------|--------------------------------------------|
-| TIMELOCK_CONTROLLER  | [0xB4e7d6cF228a6cB316FeEcf4700BE133257eFF47](https://testnet-explorer.thetatoken.org/account/0xB4e7d6cF228a6cB316FeEcf4700BE133257eFF47) |
-| DAO_TOKEN            | [0xb0c3b5778436737c1fe7ac554d2ea9180A620574](https://testnet-explorer.thetatoken.org/account/0xb0c3b5778436737c1fe7ac554d2ea9180A620574) |
-| LISTING_GOVERNER     | [0x7c12bcf3154DA003D7e79875707cC3aa393a3646](https://testnet-explorer.thetatoken.org/account/0x7c12bcf3154DA003D7e79875707cC3aa393a3646) |
-| THETRE               | [0x19648bD235C758C7a54BC4B7e4d8Faf67a8a44EE](https://testnet-explorer.thetatoken.org/account/0x19648bD235C758C7a54BC4B7e4d8Faf67a8a44EE) |
-| GOVERNANCE_PASS      | [0x1a1d19fe31197e49ffcc292ff6a23c4fefb3ff39](https://testnet-explorer.thetatoken.org/account/0x1a1d19fe31197e49ffcc292ff6a23c4fefb3ff39) |
+| [TIMELOCK_CONTROLLER](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol)  | [0xB4e7d6cF228a6cB316FeEcf4700BE133257eFF47](https://testnet-explorer.thetatoken.org/account/0xB4e7d6cF228a6cB316FeEcf4700BE133257eFF47) |
+| [DAO_TOKEN](https://github.com/ThetreLive/thetre-contracts/blob/master/contracts/ThetreListings/DAOToken.sol)            | [0xb0c3b5778436737c1fe7ac554d2ea9180A620574](https://testnet-explorer.thetatoken.org/account/0xb0c3b5778436737c1fe7ac554d2ea9180A620574) |
+| [LISTING_GOVERNER](https://github.com/ThetreLive/thetre-contracts/blob/master/contracts/ThetreListings/ListingGoverner.sol)     | [0x7c12bcf3154DA003D7e79875707cC3aa393a3646](https://testnet-explorer.thetatoken.org/account/0x7c12bcf3154DA003D7e79875707cC3aa393a3646) |
+| [THETRE](https://github.com/ThetreLive/thetre-contracts/blob/master/contracts/Thetre.sol)               | [0x19648bD235C758C7a54BC4B7e4d8Faf67a8a44EE](https://testnet-explorer.thetatoken.org/account/0x19648bD235C758C7a54BC4B7e4d8Faf67a8a44EE) |
+| [GOVERNANCE_PASS](https://github.com/ThetreLive/thetre-contracts/blob/master/contracts/ThetreTicket.sol)      | [0x1a1d19fe31197e49ffcc292ff6a23c4fefb3ff39](https://testnet-explorer.thetatoken.org/account/0x1a1d19fe31197e49ffcc292ff6a23c4fefb3ff39) |
 
 
 ### Backend Architecture
@@ -92,9 +93,11 @@ Thetre's main focus is to provide an excellent user experience while being cost-
 
 3. Free Movies - Free movies are directly accessed via theta edgestore using a specific key and relpath.
 
-4. DRM Based Recorded Movies - These movies require the viewer to own an NFT from the movie's collection. It is stored in Theta EdgeCloud for DRM Based Access. These movies can be watched at any time, since they're always available.
+4. DRM Based Recorded Movies - These movies require the viewer to own an NFT from the movie's collection. It is stored in Theta EdgeCloud for DRM Based Access. These movies can be watched at any time, since they're always available. [/utils/theta.ts](https://github.com/ThetreLive/thetre-website/blob/master/src/utils/theta.ts)
 
 5. DRM Based Livestreamed Movies - These movies also require an NFT from the movie's collection. But they're not stored anywhere, which saves alot of backend cost. Such movies are directly live streamed(just like they do in movie theatres) by the proposer by following the schedule they specify. Therefore, they are not always available to be watched. Proposer can find a button to start livestreaming in the watch page, where they can generate stream url and key.
+
+    Check out the [thetaPlayer.tsx](https://github.com/ThetreLive/thetre-website/blob/master/src/components/thetaPlayer.tsx) component that allows to run Theta EdgeCloud Videos/Streams seemlessly.
 
 6. Chatrooms - Thetre allows viewers to libp2p based chatrooms where they can do the following operations - 
 
