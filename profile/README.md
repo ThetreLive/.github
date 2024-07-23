@@ -101,6 +101,8 @@ Thetre's main focus is to provide an excellent user experience while being cost-
 
 6. Chatrooms - Thetre allows viewers to libp2p based chatrooms where they can do the following operations - 
 
+    ![Chat](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/962/151/datas/original.png)
+
 - Chat
 - Watch Movies together in sync
 - Request/Send TFUEL in chatroom - This is a really important feature. This allows a group of people to watch movies even if none of them except one, knows about blockchain. Anyone in the chatroom can request TFUEL to buy movie tickets
