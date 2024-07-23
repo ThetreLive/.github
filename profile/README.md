@@ -78,7 +78,7 @@ Thetre's main focus is to provide an excellent user experience while being cost-
 
 5. Libp2p - Thetre uses libp2p under-the-hood for allowing users to create chatrooms where they can Chat, Watch Movies together in Sync, and Request/Send Funds. Libp2p circuit relayer is deployed in an EC2 instance, it is used to establish connection while creating a chatroom. 
 
-      <img alt="Libp2p" style="background-color: white;" src="https://data.thetaedgestore.com/api/v2/data/0xbb317b7bc86315cfcfee29c57fdb16dee0932cc236e6b874288e0f81f0ee8c58">
+      ![Libp2p](https://data.thetaedgestore.com/api/v2/data/0x0a0d993408be00ff0d3fb6c14b2fddb7cf13392848e0ec44f359a9ab235cfec9/)
 
 6. Redis - Redis is used as a cache layer for storing data related to ```ProposalCreated``` event. It is directly implemented inside NextJS api.
 
