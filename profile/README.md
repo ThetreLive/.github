@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://data.thetaedgestore.com/api/v2/data/0x5fe701fdc26e01f8698cd546ee16a7920df1a537322cb631eb08d76e5aa0162d" alt="Thetre">
+    <h2>A Decentralised Movie Streaming Experience, powered by Theta EdgeCloud Video Services, Theta Edgestore and Libp2p</h2>
+</div>
 
 ### Features
 - **A DAO for Trustless Movie Proposals and Listing:** Thetre DAO is a fully transparent and trustless system that delegates token power based on members' past history of providing movie reviews. This system adds value to the opinions of movie critics by recognising their contributions. Currently, the system is closed for testing, but ZK Snark-based smart contracts have been implemented for Thetre DAO elections. Token power is delegated based on these elections, allowing critics to vote For or Against a movie proposal.
