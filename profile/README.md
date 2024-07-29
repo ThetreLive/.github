@@ -13,7 +13,7 @@
      Subscription-based Model: Ideal for "binge-watchers," it replicates the functionality of an NFT with the subscription state being managed by the [Thetre](https://github.com/ThetreLive/thetre-contracts/blob/master/contracts/Thetre.sol) contract. The subscription currently lasts for 28 days.
 
      Pay-per-movie Model: Designed for occasional viewers, this model mints an NFT specific to the movie, allowing access via Theta DRM.
-     
+
 - **Watch Movies Together With Friends and Family:** Thetre makes it easy to enjoy movies with your loved ones using Libp2p and gossipsub technology. With just one click, you can start a watch party that includes:
 
      Real-time Chat: Chat with your friends and family as you watch.
@@ -101,7 +101,7 @@ Thetre's main focus is to provide an excellent user experience while being cost-
 
 6. Chatrooms - Thetre allows viewers to libp2p based chatrooms where they can do the following operations - 
 
-    ![Chat](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/962/151/datas/original.png)
+    ![Chat](https://data.thetaedgestore.com/api/v2/data/0x8efa0866e076922508263cd27b99626106da39a3607084e3fac3fcd51ffd51b4/)
 
 - Chat
 - Watch Movies together in sync
