@@ -34,7 +34,7 @@
 Thetre's main focus is to provide an excellent user experience while being cost-effective.
 
 ### DAO & Proposals
-![Proposals](https://data.thetaedgestore.com/api/v2/data/0x450f37edfc0a91e1df612883c30a1c64a49c71af9706934f841e3da72d9a3536/)
+![Proposals](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/967/682/datas/original.png)
 
 1. ZK Snarks - Zero-Knowledge Snark is used for the election of DAO members, ensuring the process is completely anonymous and decentralised. The DAO election occurs monthly, allowing anyone to apply and share their "love for movies." During the testing phase, this process is internal but will be open to all on the mainnet. After a certain threshold of votes is achieved, the applicant receives a DAO Pass which is used for DRM Sign-in while viewing proposals. 
     Check out the contracts [here](https://github.com/ThetreLive/thetre-contracts/tree/master/contracts/ThetreDAOElection)
